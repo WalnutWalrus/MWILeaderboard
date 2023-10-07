@@ -15,4 +15,4 @@ if __name__ == "__main__":
     createCombat.calculate_combat_hourly_xp()
 
     # Copy the final output to the desired location
-    shutil.copy("Outputs/output_combat.json", "output.json")
+    shutil.copy("Outputs/output_combat.json", "docs/output.json")
