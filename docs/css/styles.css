@@ -1,0 +1,8 @@
+/* Add styling as needed. This is a basic example. */
+nav {
+    display: flex;
+    gap: 10px;
+}
+nav button {
+    cursor: pointer;
+}
