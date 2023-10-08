@@ -7,23 +7,31 @@ $(document).ready(function() {
     $('nav button').click(function() {
         const tabName = $(this).data('tab');
         loadTabContent(tabName, function() {
-            if (['milking', 'woodcutting', 'foraging', 'cheesesmithing', 'crafting', 'tailoring', 'cooking', 'brewing', 'enhancing', 'stamina', 'intelligence', 'attack', 'power', 'defense', 'ranged', 'magic'].includes(tabName)) {
-                initializeDataTable(tabName);
-            }
-            if (['guild'].includes(tabName)) {
-                initializeGuildDataTable(tabName);
-            }
-            if (['combat'].includes(tabName)) {
-                initializeCombatDataTable(tabName);
-            }
-            if (['taskPoints'].includes(tabName)) {
-                initializeTaskPointsDataTable(tabName);
-            }
-            if (['totalLevel'].includes(tabName)) {
-                initializeTotalLevelDataTable(tabName);
-            }
-            if (['totalHourly'].includes(tabName)) {
-                initializeTotalHourlyDataTable(tabName);
+            const tabInitializers = {
+                'milking': initializeDataTable,
+                'woodcutting': initializeDataTable,
+                'foraging': initializeDataTable,
+                'cheesesmithing': initializeDataTable,
+                'crafting': initializeDataTable,
+                'tailoring': initializeDataTable,
+                'cooking': initializeDataTable,
+                'brewing': initializeDataTable,
+                'enhancing': initializeDataTable,
+                'stamina': initializeDataTable,
+                'intelligence': initializeDataTable,
+                'attack': initializeDataTable,
+                'power': initializeDataTable,
+                'defense': initializeDataTable,
+                'ranged': initializeDataTable,
+                'magic': initializeDataTable,
+                'guild': initializeGuildDataTable,
+                'combat': initializeCombatDataTable,
+                'taskPoints': initializeTaskPointsDataTable,
+                'totalLevel': initializeTotalLevelDataTable,
+                'totalHourly': initializeTotalHourlyDataTable
+            };
+            if (tabInitializers[tabName]) {
+                tabInitializers[tabName](tabName);
             }
         });
     });
