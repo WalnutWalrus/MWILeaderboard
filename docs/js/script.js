@@ -116,6 +116,7 @@ $(document).ready(function() {
                     );
 
                     playerDataArray.push([
+                        0,
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
                         player[`${capitalizedTabName}EndingXP`],
@@ -129,6 +130,7 @@ $(document).ready(function() {
             $(`#${tabName}Table`).DataTable({
                 data: playerDataArray,
                 columns: [
+                    { title: "Position" },
                     { title: "Name" },
                     { title: `${capitalizedTabName} Level` },
                     { title: `${capitalizedTabName} Ending XP` },
@@ -136,11 +138,18 @@ $(document).ready(function() {
                     { title: `Next Level Up Time` },
                     { title: `Overtake Time` }
                 ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
                 colReorder: true,
-                order: [[1, 'desc']],
+                order: [[2, 'desc']],
                 columnDefs: [
-                    { targets: 1, orderData: 2 },
-                    { targets: 2, visible: false },
+                    { targets: 2, orderData: 3 },
+                    { targets: 3, visible: false },
                     { targets: "_all", orderSequence: ["desc", "asc"] }
                 ],
                 responsive: true,
@@ -224,6 +233,7 @@ $(document).ready(function() {
                     );
 
                     playerDataArray.push([
+                        0,
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
                         player[`${capitalizedTabName}EndingXP`],
@@ -238,6 +248,7 @@ $(document).ready(function() {
             $(`#${tabName}Table`).DataTable({
                 data: playerDataArray,
                 columns: [
+                    { title: "Position" },
                     { title: "Name" },
                     { title: `${capitalizedTabName} Level` },
                     { title: `${capitalizedTabName} Ending XP` },
@@ -246,11 +257,18 @@ $(document).ready(function() {
                     { title: `Next Guild Slot` },
                     { title: `Overtake Time` }
                 ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
                 colReorder: true,
-                order: [[1, 'desc']],
+                order: [[2, 'desc']],
                 columnDefs: [
-                    { targets: 1, orderData: 2 },
-                    { targets: 2, visible: false },
+                    { targets: 2, orderData: 3 },
+                    { targets: 3, visible: false },
                     { targets: "_all", orderSequence: ["desc", "asc"] }
                 ],
                 responsive: true,
