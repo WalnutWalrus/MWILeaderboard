@@ -125,11 +125,11 @@ $(document).ready(function() {
                 data: playerDataArray,
                 columns: [
                     { title: "Name" },
-                    { title: `${capitalizedTabName} Ending Level` },
+                    { title: `${capitalizedTabName} Level` },
                     { title: `${capitalizedTabName} Ending XP` },
                     { title: `${capitalizedTabName} Hourly XP` },
-                    { title: `${capitalizedTabName} Level Up` },
-                    { title: `${capitalizedTabName} Overtake Timestamp` }
+                    { title: `Next Level Up Time` },
+                    { title: `Overtake Time` }
                 ],
                 colReorder: true,
                 order: [[1, 'desc']],

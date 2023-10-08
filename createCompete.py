@@ -21,8 +21,6 @@ def calculate_overtake():
             # Determine the XP difference
             xp_diff = next_player.get(f"{skill}EndingXP", 0) - player.get(f"{skill}EndingXP", 0)
 
-            # Check if current player will overtake the next player
-            # xp_rate_diff = player.get(f"{skill}HourlyXP", 0) - next_player.get(f"{skill}HourlyXP", 0)
             # Check if next_player will overtake the current player
             xp_rate_diff = next_player.get(f"{skill}HourlyXP", 0) - player.get(f"{skill}HourlyXP", 0)
 
@@ -39,7 +37,6 @@ def calculate_overtake():
     # Save the updated data into a new JSON file
     with open("Outputs/output_compete.json", "w") as f:
         json.dump(data, f, indent=4)
-
 
 
 if __name__ == "__main__":
