@@ -13,6 +13,12 @@ $(document).ready(function() {
         });
     });
 
+    function timeToString(utcString, prefix = "") {
+        const formattedTime = toLocalFormattedTime(utcString);
+        return ["Already Rank 1", "Not catching up", "N/A"].includes(utcString)
+            ? utcString
+            : `${prefix} ${formattedTime}`;
+    }
 
     // Load welcome tab by default
     loadTabContent('welcome');
@@ -94,13 +100,15 @@ $(document).ready(function() {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
                 if (player[`${capitalizedTabName}EndingLevel`]) {
-                    const levelUpCountdown = countdownToLocalTime(player[`${capitalizedTabName}LevelUp`]);
-                    const levelUpTime = (levelUpCountdown === "Already Rank 1" || levelUpCountdown === "Not catching up" || levelUpCountdown === "N/A") ? levelUpCountdown : `${levelUpCountdown}, ${toLocalFormattedTime(player[`${capitalizedTabName}LevelUp`])}`;
+                    const levelUpTime = timeToString(
+                        player[`${capitalizedTabName}LevelUp`],
+                        countdownToLocalTime(player[`${capitalizedTabName}LevelUp`])
+                    );
 
-                    const overtakeCountdown = countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`]);
-                    const overtakeTime = (overtakeCountdown === "Already Rank 1" || overtakeCountdown === "Not catching up" || overtakeCountdown === "N/A") ? overtakeCountdown : `${overtakeCountdown}, ${toLocalFormattedTime(player[`${capitalizedTabName}OvertakeTimestamp`])}`;
-
-
+                    const overtakeTime = timeToString(
+                        player[`${capitalizedTabName}OvertakeTimestamp`],
+                        countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
+                    );
 
                     playerDataArray.push([
                         player.Name,
@@ -113,7 +121,6 @@ $(document).ready(function() {
                 }
             });
 
-
             $(`#${tabName}Table`).DataTable({
                 data: playerDataArray,
                 columns: [
@@ -125,31 +132,18 @@ $(document).ready(function() {
                     { title: `${capitalizedTabName} Overtake Timestamp` }
                 ],
                 colReorder: true,
-                order: [[1, 'desc']], //Sort on col 1, highest to lowest
+                order: [[1, 'desc']],
                 columnDefs: [
-                    {
-                        targets: 1,  // Level actually sorts on
-                        orderData: 2  // XP
-                    },
-                    {
-                        "targets": 2, // Hide column 2
-                        "visible": false
-                    },
-                    {
-                        "targets": "_all",
-                        "orderSequence": ["desc", "asc"]
-                    }
+                    { targets: 1, orderData: 2 },
+                    { targets: 2, visible: false },
+                    { targets: "_all", orderSequence: ["desc", "asc"] }
                 ],
-                // Your shared DataTables settings
                 responsive: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
-                buttons: [
-                    'copy', 'excel', 'pdf'
-                ],
+                buttons: ['copy', 'excel', 'pdf'],
                 "pagingType": "full_numbers",
                 "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-                responsive: true,
                 language: {
                     search: "_INPUT_",
                     searchPlaceholder: "Search records",
@@ -157,6 +151,4 @@ $(document).ready(function() {
             });
         });
     }
-
-
 });

@@ -22,14 +22,16 @@ def calculate_overtake():
             xp_diff = next_player.get(f"{skill}EndingXP", 0) - player.get(f"{skill}EndingXP", 0)
 
             # Check if current player will overtake the next player
-            xp_rate_diff = player.get(f"{skill}HourlyXP", 0) - next_player.get(f"{skill}HourlyXP", 0)
+            # xp_rate_diff = player.get(f"{skill}HourlyXP", 0) - next_player.get(f"{skill}HourlyXP", 0)
+            # Check if next_player will overtake the current player
+            xp_rate_diff = next_player.get(f"{skill}HourlyXP", 0) - player.get(f"{skill}HourlyXP", 0)
 
             if xp_rate_diff > 0:
-                hours_to_overtake = xp_diff / xp_rate_diff
+                hours_to_overtake = abs(xp_diff) / xp_rate_diff
                 overtake_time = datetime.fromisoformat(data['metadata']['endTime']) + timedelta(hours=hours_to_overtake)
-                player[f"{skill}OvertakeTimestamp"] = overtake_time.isoformat()
+                next_player[f"{skill}OvertakeTimestamp"] = overtake_time.isoformat()
             else:
-                player[f"{skill}OvertakeTimestamp"] = "Not catching up"
+                next_player[f"{skill}OvertakeTimestamp"] = "Not catching up"
 
         # Top ranked player
         sorted_players[0][f"{skill}OvertakeTimestamp"] = "Already Rank 1"
@@ -37,6 +39,7 @@ def calculate_overtake():
     # Save the updated data into a new JSON file
     with open("Outputs/output_compete.json", "w") as f:
         json.dump(data, f, indent=4)
+
 
 
 if __name__ == "__main__":
