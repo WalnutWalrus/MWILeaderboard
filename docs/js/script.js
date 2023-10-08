@@ -13,6 +13,9 @@ $(document).ready(function() {
             if (['guild'].includes(tabName)) {
                 initializeGuildDataTable(tabName);
             }
+            if (['combat'].includes(tabName)) {
+                initializeCombatDataTable(tabName);
+            }
         });
     });
 
@@ -269,6 +272,73 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: 2, orderData: 3 },
                     { targets: 3, visible: false },
+                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                ],
+                responsive: true,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
+
+    function initializeCombatDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
+
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
+        $.getJSON('output.json', function(data) {
+            var playerDataArray = [];
+            $.each(data.playerData, function(index, player) {
+                if (player[`${capitalizedTabName}HourlyXP`]) {
+
+                    playerDataArray.push([
+                        0,
+                        player.Name,
+                        player[`${capitalizedTabName}HourlyXP`],
+                        player[`StaminaHourlyXP`] || 0,
+                        player[`DefenseHourlyXP`] || 0,
+                        player[`IntelligenceHourlyXP`] || 0,
+                        player[`AttackHourlyXP`] || 0,
+                        player[`PowerHourlyXP`] || 0,
+                        player[`RangedHourlyXP`] || 0,
+                        player[`MagicHourlyXP`] || 0
+                    ]);
+                }
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: playerDataArray,
+                columns: [
+                    { title: "Position" },
+                    { title: "Name" },
+                    { title: `Total ${capitalizedTabName} Hourly XP` },
+                    { title: `Stamina` },
+                    { title: `Defense` },
+                    { title: `Intelligence` },
+                    { title: `Attack` },
+                    { title: `Power` },
+                    { title: `Ranged` },
+                    { title: `Magic` }
+                ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
+                colReorder: true,
+                order: [[2, 'desc']],
+                columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"] }
                 ],
                 responsive: true,
