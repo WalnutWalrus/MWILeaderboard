@@ -565,7 +565,7 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
