@@ -5,7 +5,6 @@ from config import SKILL_NAMES
 def calculate_hourly_xp():
     with open("Outputs/output.json", "r") as f:
         data = json.load(f)
-
     player_data = data['playerData']
     time_difference_hours = data['metadata']['timeDifference'] / 60
 
@@ -36,7 +35,6 @@ def calculate_hourly_xp():
                     total_hourly_xp += hourly_xp
 
         player["TotalHourlyXP"] = total_hourly_xp
-
     with open("Outputs/output_hourly.json", "w") as f:
         json.dump(data, f, indent=4)
 
