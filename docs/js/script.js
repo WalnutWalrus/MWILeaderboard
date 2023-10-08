@@ -159,7 +159,7 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: 2, orderData: 3 },
                     { targets: 3, visible: false },
-                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: true,
                 "pageLength": 100,
@@ -278,7 +278,7 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: 2, orderData: 3 },
                     { targets: 3, visible: false },
-                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: true,
                 "pageLength": 100,
@@ -345,7 +345,7 @@ $(document).ready(function() {
                 colReorder: true,
                 order: [[2, 'desc']],
                 columnDefs: [
-                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: true,
                 "pageLength": 100,
@@ -401,7 +401,7 @@ $(document).ready(function() {
                 colReorder: true,
                 order: [[2, 'desc']],
                 columnDefs: [
-                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: true,
                 "pageLength": 100,
@@ -458,7 +458,7 @@ $(document).ready(function() {
                 colReorder: true,
                 order: [[2, 'desc']],
                 columnDefs: [
-                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: true,
                 "pageLength": 100,
@@ -473,5 +473,17 @@ $(document).ready(function() {
             });
         });
     }
+
+    function formatNumberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    function renderNumberWithCommas(data, type) {
+        if (type === 'display' && !isNaN(data) && data !== null) {
+            return formatNumberWithCommas(data);
+        }
+        return data;
+    }
+
+
 
 });
