@@ -16,6 +16,12 @@ $(document).ready(function() {
             if (['combat'].includes(tabName)) {
                 initializeCombatDataTable(tabName);
             }
+            if (['taskPoints'].includes(tabName)) {
+                initializeTaskPointsDataTable(tabName);
+            }
+            if (['totalLevel'].includes(tabName)) {
+                initializeTotalLevelDataTable(tabName);
+            }
         });
     });
 
@@ -328,6 +334,119 @@ $(document).ready(function() {
                     { title: `Power` },
                     { title: `Ranged` },
                     { title: `Magic` }
+                ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
+                colReorder: true,
+                order: [[2, 'desc']],
+                columnDefs: [
+                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                ],
+                responsive: true,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
+
+    function initializeTaskPointsDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
+
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
+        $.getJSON('output.json', function(data) {
+            var playerDataArray = [];
+            $.each(data.playerData, function(index, player) {
+                if (player[`${capitalizedTabName}EndingLevel`]) {
+
+                    playerDataArray.push([
+                        0,
+                        player.Name,
+                        player.TaskPointsEndingLevel,
+                        player.TaskPointsEarned
+                    ]);
+                }
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: playerDataArray,
+                columns: [
+                    { title: "Position" },
+                    { title: "Name" },
+                    { title: "Ended With" },
+                    { title: "Earned" },
+
+                ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
+                colReorder: true,
+                order: [[2, 'desc']],
+                columnDefs: [
+                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                ],
+                responsive: true,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
+
+    function initializeTotalLevelDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
+
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
+        $.getJSON('output.json', function(data) {
+            var playerDataArray = [];
+            $.each(data.playerData, function(index, player) {
+                if (player[`${capitalizedTabName}EndingLevel`]) {
+
+                    playerDataArray.push([
+                        0,
+                        player.Name,
+                        player.TotalLevelEndingLevel,
+                        player.TotalLevelEndingXP,
+                        player.TotalLevelHourlyXP
+                    ]);
+                }
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: playerDataArray,
+                columns: [
+                    { title: "Position" },
+                    { title: "Name" },
+                    { title: "Last Known Total Level" },
+                    { title: "Last Known Total XP" },
+                    { title: "Hourly XP (over all skills)" }
                 ],
                 drawCallback: function(settings) {
                     // Renumber the "Position" column on each draw
