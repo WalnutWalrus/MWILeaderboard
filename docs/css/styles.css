@@ -1,8 +1,13 @@
 /* Add styling as needed. This is a basic example. */
-nav {
-    display: flex;
-    gap: 10px;
-}
 nav button {
     cursor: pointer;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* this makes the buttons align to the left */
+}
+
+nav .btn {
+    margin: 5px;  /* Optional: Adds some spacing between the buttons */
 }
