@@ -13,11 +13,11 @@
     <script src="js/colReorder.bootstrap5.min.js"></script>
     <script src="js/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
     <nav>
-        <button data-tab="welcome" class="btn btn-primary">Welcome</button>
         <button data-tab="milking" class="btn btn-primary">Milking</button>
         <button data-tab="foraging" class="btn btn-primary">Foraging</button>
         <button data-tab="woodcutting" class="btn btn-primary">Woodcutting</button>
@@ -35,9 +35,14 @@
         <button data-tab="ranged" class="btn btn-primary">Ranged</button>
         <button data-tab="magic" class="btn btn-primary">Magic</button>
         <button data-tab="guild" class="btn btn-primary">Guild</button>
-
     </nav>
     <div id="content">
+        <h1>Very much still in progress</h1>
+        <p>Suggestions welcome, as well as any errors you find</p>
+
+        <p style="display: none;">Start: <span id="startTime"></span></p>
+        <p>Last data taken: <span id="endTime"></span>, <span id="timeAgo"></span> ago</p>
+        <p>Duration: ~<span id="timeDifference"></span> hours</p>
     </div>
 </body>
 </html>

@@ -23,9 +23,6 @@ $(document).ready(function() {
             : `${prefix} ${formattedTime}`;
     }
 
-    // Load welcome tab by default
-    loadTabContent('welcome');
-
     function toLocalFormattedTime(utcString) {
     // List of exception strings that are not dates
     const nonDateStrings = ["Already Rank 1", "Not catching up"];
@@ -99,6 +96,11 @@ $(document).ready(function() {
 
     function initializeDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
+
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
@@ -155,8 +157,53 @@ $(document).ready(function() {
         });
     }
 
+    // Fetch the JSON data
+    fetch('output.json')
+        .then(response => response.json())
+        .then(data => {
+            displayUpdated(data);
+        })
+        .catch(error => {
+            console.error("Error fetching the JSON data:", error);
+        });
+
+
+    function displayUpdated(data) {
+        // Convert to user's local time
+        const localStartTime = moment(data.metadata.startTime).local().format('h:mma, Do MMMM YYYY');
+        const localEndTime = moment(data.metadata.endTime).local().format('h:mma, Do MMMM YYYY');
+
+        document.getElementById('startTime').innerText = localStartTime;
+        document.getElementById('endTime').innerText = localEndTime;
+
+        // Calculate time ago
+        const now = moment();
+        const endTime = moment(data.metadata.endTime).local();
+        const duration = moment.duration(now.diff(endTime));
+
+        let timeAgoText = "";
+        if (duration.asMinutes() < 60) {
+            timeAgoText = `${Math.round(duration.asMinutes())} minutes`;
+        } else if (duration.asHours() < 24) {
+            timeAgoText = `${Math.round(duration.asHours())} hours`;
+        } else {
+            timeAgoText = `${Math.round(duration.asDays())} days`;
+        }
+
+        document.getElementById('timeAgo').innerText = timeAgoText;
+
+        // Show time difference in hours
+        const timeDiffInHours = Math.round(data.metadata.timeDifference / 60); // as the time difference is given in minutes
+        document.getElementById('timeDifference').innerText = timeDiffInHours;
+    }
+
+
     function initializeGuildDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
+//       TODO move the following to all areas as new tabs added? seems dumb.
+        if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
