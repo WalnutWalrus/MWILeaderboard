@@ -105,6 +105,7 @@ $(document).ready(function() {
                     playerDataArray.push([
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
+                        player[`${capitalizedTabName}EndingXP`],
                         player[`${capitalizedTabName}HourlyXP`],
                         levelUpTime,
                         overtakeTime
@@ -118,11 +119,27 @@ $(document).ready(function() {
                 columns: [
                     { title: "Name" },
                     { title: `${capitalizedTabName} Ending Level` },
+                    { title: `${capitalizedTabName} Ending XP` },
                     { title: `${capitalizedTabName} Hourly XP` },
                     { title: `${capitalizedTabName} Level Up` },
                     { title: `${capitalizedTabName} Overtake Timestamp` }
                 ],
-
+                colReorder: true,
+                order: [[1, 'desc']], //Sort on col 1, highest to lowest
+                columnDefs: [
+                    {
+                        targets: 1,  // Level actually sorts on
+                        orderData: 2  // XP
+                    },
+                    {
+                        "targets": 2, // Hide column 2
+                        "visible": false
+                    },
+                    {
+                        "targets": "_all",
+                        "orderSequence": ["desc", "asc"]
+                    }
+                ],
                 // Your shared DataTables settings
                 responsive: true,
                 "pageLength": 100,
