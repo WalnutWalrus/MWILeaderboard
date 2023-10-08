@@ -7,9 +7,11 @@ $(document).ready(function() {
     $('nav button').click(function() {
         const tabName = $(this).data('tab');
         loadTabContent(tabName, function() {
-//            if (['milking', 'woodcutting', 'foraging'].includes(tabName)) {
             if (['milking', 'woodcutting', 'foraging', 'cheesesmithing', 'crafting', 'tailoring', 'cooking', 'brewing', 'enhancing', 'stamina', 'intelligence', 'attack', 'power', 'defense', 'ranged', 'magic'].includes(tabName)) {
                 initializeDataTable(tabName);
+            }
+            if (['guild'].includes(tabName)) {
+                initializeGuildDataTable(tabName);
             }
         });
     });
@@ -152,4 +154,70 @@ $(document).ready(function() {
             });
         });
     }
+
+    function initializeGuildDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
+        $.getJSON('output.json', function(data) {
+            var playerDataArray = [];
+            $.each(data.playerData, function(index, player) {
+                if (player[`${capitalizedTabName}EndingLevel`]) {
+                    const levelUpTime = timeToString(
+                        player[`${capitalizedTabName}LevelUp`],
+                        countdownToLocalTime(player[`${capitalizedTabName}LevelUp`])
+                    );
+
+                    const overtakeTime = timeToString(
+                        player[`${capitalizedTabName}OvertakeTimestamp`],
+                        countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
+                    );
+
+                    const nextGuildSlot = timeToString(
+                        player[`NextGuildSlot`],
+                        countdownToLocalTime(player[`NextGuildSlot`])
+                    );
+
+                    playerDataArray.push([
+                        player.Name,
+                        player[`${capitalizedTabName}EndingLevel`],
+                        player[`${capitalizedTabName}EndingXP`],
+                        player[`${capitalizedTabName}HourlyXP`],
+                        levelUpTime,
+                        nextGuildSlot,
+                        overtakeTime
+                    ]);
+                }
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: playerDataArray,
+                columns: [
+                    { title: "Name" },
+                    { title: `${capitalizedTabName} Level` },
+                    { title: `${capitalizedTabName} Ending XP` },
+                    { title: `${capitalizedTabName} Hourly XP` },
+                    { title: `Next Level Up Time` },
+                    { title: `Next Guild Slot` },
+                    { title: `Overtake Time` }
+                ],
+                colReorder: true,
+                order: [[1, 'desc']],
+                columnDefs: [
+                    { targets: 1, orderData: 2 },
+                    { targets: 2, visible: false },
+                    { targets: "_all", orderSequence: ["desc", "asc"] }
+                ],
+                responsive: true,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
+
 });
