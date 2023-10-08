@@ -7,7 +7,8 @@ $(document).ready(function() {
     $('nav button').click(function() {
         const tabName = $(this).data('tab');
         loadTabContent(tabName, function() {
-            if (['milking', 'woodcutting'].includes(tabName)) {
+//            if (['milking', 'woodcutting', 'foraging'].includes(tabName)) {
+            if (['milking', 'woodcutting', 'foraging', 'cheesesmithing', 'crafting', 'tailoring', 'cooking', 'brewing', 'enhancing', 'stamina', 'intelligence', 'attack', 'power', 'defense', 'ranged', 'magic'].includes(tabName)) {
                 initializeDataTable(tabName);
             }
         });
