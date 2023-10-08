@@ -38,25 +38,30 @@
         <button data-tab="combat" class="btn btn-primary">Combat</button>
         <button data-tab="taskPoints" class="btn btn-primary">Task Points</button>
         <button data-tab="totalLevel" class="btn btn-primary">Total Level</button>
+        <button data-tab="totalHourly" class="btn btn-primary">Total Hourly</button>
 
     </nav>
     <div id="content">
         <h1>Very much still in progress</h1>
         <p>Suggestions welcome, as well as any errors you find</p>
         <p>Not sure what to display for Task/Total Level</p>
-        <p>I probably need to add something for just all skills like the old one had</p>
+
+        <h4>Limitations</h4>
+        <ul>
+            <li>If you aren't on the LB for that skill, you aren't shown</li>
+            <li>You only show if you were on the LB for both start and stop data points</li>
+        </ul>
 
         <h4>Known Issues</h4>
         <ul>
-            <li>Name changes will cause issues</li>
-            <li>Names only show if that player is on the LB for that skill</li>
+            <li>Name changes break things for a day</li>
             <li>Catchup logic only looks at the player ahead on the LB</li>
         </ul>
 
         <h3>Updated</h3>
         <p style="display: none;">Start: <span id="startTime"></span></p>
         <p>Last data taken: <span id="endTime"></span>, <span id="timeAgo"></span> ago</p>
-        <p>Duration: ~<span id="timeDifference"></span> hours</p>
+        <p>Average measured over: ~<span id="timeDifference"></span> hours</p>
     </div>
 </body>
 </html>

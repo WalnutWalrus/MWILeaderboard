@@ -22,6 +22,9 @@ $(document).ready(function() {
             if (['totalLevel'].includes(tabName)) {
                 initializeTotalLevelDataTable(tabName);
             }
+            if (['totalHourly'].includes(tabName)) {
+                initializeTotalHourlyDataTable(tabName);
+            }
         });
     });
 
@@ -484,6 +487,88 @@ $(document).ready(function() {
         return data;
     }
 
+    function initializeTotalHourlyDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
 
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
+        $.getJSON('output.json', function(data) {
+            var playerDataArray = [];
+            $.each(data.playerData, function(index, player) {
+                if (player[`${capitalizedTabName}XP`]) {
+                    playerDataArray.push([
+                        0,
+                        player.Name,
+                        player.TotalHourlyXP ?? 0,
+                        player.StaminaHourlyXP ?? 0,
+                        player.IntelligenceHourlyXP ?? 0,
+                        player.AttackHourlyXP ?? 0,
+                        player.PowerHourlyXP ?? 0,
+                        player.DefenseHourlyXP ?? 0,
+                        player.RangedHourlyXP ?? 0,
+                        player.MagicHourlyXP ?? 0,
+                        player.CheesesmithingHourlyXP ?? 0,
+                        player.CraftingHourlyXP ?? 0,
+                        player.TailoringHourlyXP ?? 0,
+                        player.CookingHourlyXP ?? 0,
+                        player.BrewingHourlyXP ?? 0,
+                        player.EnhancingHourlyXP ?? 0,
+                        player.MilkingHourlyXP ?? 0,
+                        player.ForagingHourlyXP ?? 0,
+                        player.WoodcuttingHourlyXP ?? 0
+                    ]);
+                }
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: playerDataArray,
+                columns: [
+                    { title: "Position" },
+                    { title: "Name" },
+                    { title: "Total" },
+                    { title: "Stamina" },
+                    { title: "Intelligence" },
+                    { title: "Attack" },
+                    { title: "Power" },
+                    { title: "Defense" },
+                    { title: "Ranged" },
+                    { title: "Magic" },
+                    { title: "Cheesesmithing" },
+                    { title: "Crafting" },
+                    { title: "Tailoring" },
+                    { title: "Cooking" },
+                    { title: "Brewing" },
+                    { title: "Enhancing" },
+                    { title: "Milking" },
+                    { title: "Foraging" },
+                    { title: "Woodcutting" }
+                ],
+                drawCallback: function(settings) {
+                    // Renumber the "Position" column on each draw
+                    var api = this.api();
+                    api.column(0, { page: 'current' }).nodes().each(function(cell, i) {
+                        cell.innerHTML = i + 1;
+                    });
+                },
+                colReorder: true,
+                order: [[2, 'desc']],
+                columnDefs: [
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
+                ],
+                responsive: true,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
 
 });

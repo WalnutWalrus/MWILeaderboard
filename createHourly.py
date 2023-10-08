@@ -35,7 +35,7 @@ def calculate_hourly_xp():
                 if skill != "Total Level":
                     total_hourly_xp += hourly_xp
 
-        player["totalHourlyXP"] = total_hourly_xp
+        player["TotalHourlyXP"] = total_hourly_xp
 
     with open("Outputs/output_hourly.json", "w") as f:
         json.dump(data, f, indent=4)
