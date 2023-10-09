@@ -38,6 +38,19 @@ def calculate_hourly_xp():
     with open("Outputs/output_hourly.json", "w") as f:
         json.dump(data, f, indent=4)
 
+# For players on Total Level LB, use xp from Total Level for actual hourly
+def calculate_total_greater_than_hourly():
+    with open("Outputs/output_hourly.json", "r") as f:
+        data = json.load(f)
+    player_data = data['playerData']
+
+    for player in player_data:
+        if "TotalLevelHourlyXP" in player:
+            if player["TotalLevelHourlyXP"] > player.get("TotalHourlyXP", 0):
+                player["TotalHourlyXP"] = player["TotalLevelHourlyXP"]
+    with open("Outputs/output_hourly.json", "w") as f:
+        json.dump(data, f, indent=4)
+
 
 if __name__ == "__main__":
     calculate_hourly_xp()
