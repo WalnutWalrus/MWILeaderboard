@@ -326,6 +326,7 @@ $(document).ready(function() {
                         player[`IntelligenceHourlyXP`] || 0,
                         player[`AttackHourlyXP`] || 0,
                         player[`PowerHourlyXP`] || 0,
+                        player[`MeleeHourlyXP`] || 0,
                         player[`RangedHourlyXP`] || 0,
                         player[`MagicHourlyXP`] || 0
                     ]);
@@ -343,6 +344,7 @@ $(document).ready(function() {
                     { title: `Intelligence` },
                     { title: `Attack` },
                     { title: `Power` },
+                    { title: `Melee Total` },
                     { title: `Ranged` },
                     { title: `Magic` }
                 ],

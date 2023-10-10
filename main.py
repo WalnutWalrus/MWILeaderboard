@@ -14,6 +14,7 @@ if __name__ == "__main__":
     createGuild.calculate_next_guild_slot()
     createCompete.calculate_overtake()
     createCombat.calculate_combat_hourly_xp()
+    createCombat.calculate_melee_hourly_xp()
 
     # Copy the final output to prep for HTML
     shutil.copy("Outputs/output_combat.json", "docs/output.json")

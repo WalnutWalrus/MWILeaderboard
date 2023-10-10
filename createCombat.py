@@ -14,5 +14,18 @@ def calculate_combat_hourly_xp():
         json.dump(data, f, indent=4)
 
 
+# Combined attack and power hourly xp, for comparisons
+def calculate_melee_hourly_xp():
+    with open("Outputs/output_combat.json", "r") as f:
+        data = json.load(f)
+
+    for player in data['playerData']:
+        if "AttackHourlyXP" in player or "PowerHourlyXP" in player:
+            player["MeleeHourlyXP"] = player.get("AttackHourlyXP", 0) + player.get("PowerHourlyXP", 0)
+
+    with open("Outputs/output_combat.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+
 if __name__ == "__main__":
     calculate_combat_hourly_xp()
