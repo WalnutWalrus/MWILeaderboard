@@ -6,14 +6,13 @@
     <title>Hourly expees</title>
     <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="css/colReorder.bootstrap5.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/datatables.min.css">
     <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/colReorder.bootstrap5.min.js"></script>
     <script src="js/datatables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/dataTables.colReorder.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -60,13 +59,14 @@
             <li>Level Up/Overtake times are estimates only</li>
             <li>If you aren't on the LB for that skill, you aren't shown</li>
             <li>You only show if you were on the LB for both start and stop data points</li>
-            <li>Updated manually</li>
+            <li>Updated manually for now (should be daily)</li>
         </ul>
 
         <h4>Known Issues</h4>
         <ul>
             <li>Name changes break things for a day</li>
             <li>Columns collapse if there are too many, or the screen is too small. I need to change to scrollbar</li>
+            <li>Column re-ordering is broken</li>
         </ul>
 
         <h4>#TODO</h4>
@@ -74,6 +74,8 @@
             <li>Add position to xp columns</li>
             <li>Make collapsed columns/tables a bit more mobile friendly</li>
             <li>Fix column re-ordering</li>
+            <li>Setup deeper skill gathering (Collect all skills if player is on any LB)</li>
+            <li>Setup guild tags</li>
         </ul>
 
         <h3>Updated</h3>
