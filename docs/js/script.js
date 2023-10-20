@@ -136,12 +136,18 @@ $(document).ready(function() {
                         countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
                     );
 
+                    const hourlyXP = (player[`${capitalizedTabName}HourlyXP`] !== null && typeof player[`${capitalizedTabName}HourlyXP`] !== 'undefined') ?
+                                     player[`${capitalizedTabName}HourlyXP`] :
+                                     "Unknown"; //Handle new players on the LB. Still shows undefined for overtake
+                                     //I probably need to add this to the other initializeDataTable setups
+                                     //#TODO so I can find this when I need to fix it.
+
                     playerDataArray.push([
                         0,
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
                         player[`${capitalizedTabName}EndingXP`],
-                        player[`${capitalizedTabName}HourlyXP`],
+                        hourlyXP,
                         levelUpTime,
                         overtakeTime
                     ]);
