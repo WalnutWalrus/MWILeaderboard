@@ -31011,5 +31011,26 @@
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0
         }
-    ]
+    ],
+    "skillData": {
+        "MilkingActive": 48,
+        "ForagingActive": 56,
+        "WoodcuttingActive": 33,
+        "CheesesmithingActive": 44,
+        "CraftingActive": 44,
+        "TailoringActive": 32,
+        "CookingActive": 39,
+        "BrewingActive": 46,
+        "EnhancingActive": 32,
+        "StaminaActive": 89,
+        "IntelligenceActive": 89,
+        "AttackActive": 59,
+        "PowerActive": 56,
+        "DefenseActive": 93,
+        "RangedActive": 61,
+        "MagicActive": 78,
+        "GuildActive": 97,
+        "Total LevelActive": 95,
+        "Task PointsActive": 88
+    }
 }

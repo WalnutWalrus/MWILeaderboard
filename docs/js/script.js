@@ -28,7 +28,8 @@ $(document).ready(function() {
                 'combat': initializeCombatDataTable,
                 'taskPoints': initializeTaskPointsDataTable,
                 'totalLevel': initializeTotalLevelDataTable,
-                'totalHourly': initializeTotalHourlyDataTable
+                'totalHourly': initializeTotalHourlyDataTable,
+                'activity': initializeActivityDataTable
             };
             if (tabInitializers[tabName]) {
                 tabInitializers[tabName](tabName);
@@ -570,6 +571,48 @@ $(document).ready(function() {
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
                 responsive: false,
+                "pageLength": 100,
+                dom: 'Bfrtip',
+                buttons: ['copy', 'excel', 'pdf'],
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records",
+                }
+            });
+        });
+    }
+
+    function initializeActivityDataTable(tabName) {
+        const capitalizedTabName = capitalizeFirstLetter(tabName);
+
+         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+            $(`#${tabName}Table`).DataTable().destroy();
+        }
+
+        $.getJSON('output.json', function(data) {
+            var skillDataArray = [];
+
+            $.each(data.skillData, function(skill, count) {
+                skillDataArray.push([
+                    skill.replace("Active", ""),  // Remove "Active" from the skill name
+                    count
+                ]);
+            });
+
+            $(`#${tabName}Table`).DataTable({
+                data: skillDataArray,
+                columns: [
+                    { title: "Skill" },
+                    { title: "Active" }
+                ],
+                colReorder: true,
+                order: [[1, 'desc']],
+                columnDefs: [
+                    { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
+                ],
+                responsive: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
