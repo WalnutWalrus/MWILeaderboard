@@ -586,29 +586,36 @@ $(document).ready(function() {
 
     function initializeActivityDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+        if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
             $(`#${tabName}Table`).DataTable().destroy();
         }
-
         $.getJSON('output.json', function(data) {
             var skillDataArray = [];
-
             $.each(data.skillData, function(skill, count) {
-                skillDataArray.push([
-                    skill.replace("Active", ""),  // Remove "Active" from the skill name
-                    count
-                ]);
-            });
+                const skillName = skill.replace("Active", "").replace("New", "");
+                if (skill.indexOf("Active") !== -1) {
+                    let activeCount = data.skillData[skillName + "Active"] || 0;
+                    let newCount = data.skillData[skillName + "New"] || 0;
+                    let totalCount = activeCount + newCount;
 
+                    skillDataArray.push([
+                        skillName,
+                        activeCount,
+                        newCount,
+                        totalCount
+                    ]);
+                }
+            });
             $(`#${tabName}Table`).DataTable({
                 data: skillDataArray,
                 columns: [
                     { title: "Skill" },
-                    { title: "Active" }
+                    { title: "Active" },
+                    { title: "New" },
+                    { title: "Total" }
                 ],
                 colReorder: true,
-                order: [[1, 'desc']],
+                order: [[3, 'desc']],
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
@@ -625,5 +632,4 @@ $(document).ready(function() {
             });
         });
     }
-
 });

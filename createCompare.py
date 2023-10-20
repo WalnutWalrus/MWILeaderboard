@@ -70,14 +70,31 @@ def generate_output():
                 "Name": player_key[0],
                 "IsGuild": player_key[1]
             }
+
             for skill in SKILL_NAMES:
-                if skill in player_recent_data and skill in older_data[player_key]:
-                    skill_formatted = skill.replace(" ", "")
-                    player_entry[f"{skill_formatted}StartingXP"] = older_data[player_key][skill]["XP"]
-                    player_entry[f"{skill_formatted}StartingLevel"] = older_data[player_key][skill]["Level"]
-                    player_entry[f"{skill_formatted}EndingXP"] = player_recent_data[skill]["XP"]
-                    player_entry[f"{skill_formatted}EndingLevel"] = player_recent_data[skill]["Level"]
+                skill_formatted = skill.replace(" ", "")
+
+                # Default values for "blank" entries
+                default_xp = None
+                default_level = None
+
+                # Extract older data for skill if it exists, else use default
+                starting_xp = older_data[player_key][skill]["XP"] if skill in older_data[player_key] else default_xp
+                starting_level = older_data[player_key][skill]["Level"] if skill in older_data[
+                    player_key] else default_level
+
+                # Extract recent data for skill if it exists, else use default
+                ending_xp = player_recent_data[skill]["XP"] if skill in player_recent_data else default_xp
+                ending_level = player_recent_data[skill]["Level"] if skill in player_recent_data else default_level
+
+                # Assign extracted data to player_entry
+                player_entry[f"{skill_formatted}StartingXP"] = starting_xp
+                player_entry[f"{skill_formatted}StartingLevel"] = starting_level
+                player_entry[f"{skill_formatted}EndingXP"] = ending_xp
+                player_entry[f"{skill_formatted}EndingLevel"] = ending_level
+
             final_output["playerData"].append(player_entry)
+
     return final_output
 
 

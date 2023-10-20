@@ -16,7 +16,7 @@ def calculate_hourly_xp():
                 starting_level_key = "TaskPointsStartingLevel"
                 ending_level_key = "TaskPointsEndingLevel"
 
-                if starting_level_key in player and ending_level_key in player:
+                if player.get(starting_level_key) is not None and player.get(ending_level_key) is not None:
                     task_points_earned = player[ending_level_key] - player[starting_level_key]
                     player["TaskPointsEarned"] = task_points_earned
                 continue
@@ -25,7 +25,7 @@ def calculate_hourly_xp():
             starting_xp_key = f"{skill_formatted}StartingXP"
             ending_xp_key = f"{skill_formatted}EndingXP"
 
-            if starting_xp_key in player and ending_xp_key in player:
+            if player.get(starting_xp_key) is not None and player.get(ending_xp_key) is not None:
                 xp_difference = player[ending_xp_key] - player[starting_xp_key]
                 hourly_xp = round(xp_difference / time_difference_hours)
                 player[f"{skill_formatted}HourlyXP"] = hourly_xp
