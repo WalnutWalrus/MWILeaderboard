@@ -35,6 +35,11 @@ $(document).ready(function() {
                 tabInitializers[tabName](tabName);
             }
         });
+
+        //Active tab style control
+        $("nav button").removeClass("active-tab");
+        $(this).addClass("active-tab");
+
     });
 
     function timeToString(utcString, prefix = "") {
