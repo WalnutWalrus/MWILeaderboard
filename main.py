@@ -15,6 +15,7 @@ if __name__ == "__main__":
     createCompete.calculate_overtake()
     createCombat.calculate_combat_hourly_xp()
     createCombat.calculate_melee_hourly_xp()
+    createCombat.calculate_melee_normalised()
 
     # Copy the final output to prep for HTML
     shutil.copy("Outputs/output_combat.json", "docs/output.json")

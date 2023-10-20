@@ -327,6 +327,7 @@ $(document).ready(function() {
                         player[`AttackHourlyXP`] || 0,
                         player[`PowerHourlyXP`] || 0,
                         player[`MeleeHourlyXP`] || 0,
+                        player[`MeleeHourlyXPNormal`] || 0,
                         player[`RangedHourlyXP`] || 0,
                         player[`MagicHourlyXP`] || 0
                     ]);
@@ -345,6 +346,7 @@ $(document).ready(function() {
                     { title: `Attack` },
                     { title: `Power` },
                     { title: `Melee Total` },
+                    { title: `Melee Norm` },
                     { title: `Ranged` },
                     { title: `Magic` }
                 ],

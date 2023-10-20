@@ -27,5 +27,17 @@ def calculate_melee_hourly_xp():
         json.dump(data, f, indent=4)
 
 
+def calculate_melee_normalised():
+    with open("Outputs/output_combat.json", "r") as f:
+        data = json.load(f)
+
+    for player in data['playerData']:
+        if "AttackHourlyXP" in player or "PowerHourlyXP" in player:
+            player["MeleeHourlyXPNormal"] = round((player.get("AttackHourlyXP", 0) + player.get("PowerHourlyXP", 0)) / 1.5)
+
+    with open("Outputs/output_combat.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+
 if __name__ == "__main__":
     calculate_combat_hourly_xp()

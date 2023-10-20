@@ -85,7 +85,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Rodrig8v",
@@ -387,7 +388,8 @@
             "MagicOvertakeTimestamp": "2023-10-23T07:44:57.963538+00:00",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 122856,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Vent",
@@ -464,7 +466,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 60417,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "kiwi",
@@ -847,7 +850,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Nidras",
@@ -1054,7 +1058,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 3029,
-            "MeleeHourlyXP": 3029
+            "MeleeHourlyXP": 3029,
+            "MeleeHourlyXPNormal": 2019
         },
         {
             "Name": "Ronagall",
@@ -1708,7 +1713,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "SneakyNinja",
@@ -1790,7 +1796,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 80263,
-            "MeleeHourlyXP": 31774
+            "MeleeHourlyXP": 31774,
+            "MeleeHourlyXPNormal": 21183
         },
         {
             "Name": "ngoctien",
@@ -1860,7 +1867,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 26023,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "demolysis",
@@ -1895,7 +1903,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Boltonsquad",
@@ -2033,7 +2042,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Blueglacei",
@@ -2299,7 +2309,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "GMoney",
@@ -2385,7 +2396,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Lumpy083",
@@ -2420,7 +2432,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "5656",
@@ -2536,7 +2549,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 86392,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "GlitCH12211",
@@ -2595,7 +2609,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 49041,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "dessie658",
@@ -2709,7 +2724,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "rieruxcii",
@@ -2750,7 +2766,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "gdfgsdgse",
@@ -2852,7 +2869,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "yuukishinjou",
@@ -3130,7 +3148,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Quebec",
@@ -3407,7 +3426,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 26463,
-            "MeleeHourlyXP": 26463
+            "MeleeHourlyXP": 26463,
+            "MeleeHourlyXPNormal": 17642
         },
         {
             "Name": "louis",
@@ -3494,7 +3514,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Vladd",
@@ -4179,7 +4200,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 13139,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Masterdom",
@@ -6174,7 +6196,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "DrBeans",
@@ -6938,7 +6961,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 37422,
-            "MeleeHourlyXP": 37422
+            "MeleeHourlyXP": 37422,
+            "MeleeHourlyXPNormal": 24948
         },
         {
             "Name": "MoutMout",
@@ -7526,7 +7550,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Jes1",
@@ -9103,7 +9128,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 70872,
-            "MeleeHourlyXP": 33512
+            "MeleeHourlyXP": 33512,
+            "MeleeHourlyXPNormal": 22341
         },
         {
             "Name": "TuckIsBetter",
@@ -10486,7 +10512,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 2563,
-            "MeleeHourlyXP": 2563
+            "MeleeHourlyXP": 2563,
+            "MeleeHourlyXPNormal": 1709
         },
         {
             "Name": "crow",
@@ -10563,7 +10590,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 4303,
-            "MeleeHourlyXP": 4303
+            "MeleeHourlyXP": 4303,
+            "MeleeHourlyXPNormal": 2869
         },
         {
             "Name": "blendiekat",
@@ -12126,7 +12154,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 111204,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "CowPowMooMan",
@@ -14076,7 +14105,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 71422,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "TaxCollector",
@@ -14385,7 +14415,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 67037,
-            "MeleeHourlyXP": 7812
+            "MeleeHourlyXP": 7812,
+            "MeleeHourlyXPNormal": 5208
         },
         {
             "Name": "RainbowStaple",
@@ -14625,7 +14656,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 67580,
-            "MeleeHourlyXP": 34870
+            "MeleeHourlyXP": 34870,
+            "MeleeHourlyXPNormal": 23247
         },
         {
             "Name": "xpopx",
@@ -15080,7 +15112,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 13145,
-            "MeleeHourlyXP": 13145
+            "MeleeHourlyXP": 13145,
+            "MeleeHourlyXPNormal": 8763
         },
         {
             "Name": "bipple",
@@ -18546,7 +18579,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 31542,
-            "MeleeHourlyXP": 31542
+            "MeleeHourlyXP": 31542,
+            "MeleeHourlyXPNormal": 21028
         },
         {
             "Name": "hooligan",
@@ -18974,7 +19008,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 72735,
-            "MeleeHourlyXP": 38780
+            "MeleeHourlyXP": 38780,
+            "MeleeHourlyXPNormal": 25853
         },
         {
             "Name": "misterbeaness",
@@ -19074,7 +19109,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 48643,
-            "MeleeHourlyXP": 9905
+            "MeleeHourlyXP": 9905,
+            "MeleeHourlyXPNormal": 6603
         },
         {
             "Name": "Struikrover",
@@ -19279,7 +19315,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 55362,
-            "MeleeHourlyXP": 27278
+            "MeleeHourlyXP": 27278,
+            "MeleeHourlyXPNormal": 18185
         },
         {
             "Name": "Kirneh",
@@ -19321,7 +19358,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "NeoDragon",
@@ -19450,7 +19488,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 33934,
-            "MeleeHourlyXP": 33934
+            "MeleeHourlyXP": 33934,
+            "MeleeHourlyXPNormal": 22623
         },
         {
             "Name": "Myrk",
@@ -19486,7 +19525,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 14061,
-            "MeleeHourlyXP": 14061
+            "MeleeHourlyXP": 14061,
+            "MeleeHourlyXPNormal": 9374
         },
         {
             "Name": "Zady",
@@ -20062,7 +20102,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 88471,
-            "MeleeHourlyXP": 37438
+            "MeleeHourlyXP": 37438,
+            "MeleeHourlyXPNormal": 24959
         },
         {
             "Name": "Zapara",
@@ -20128,7 +20169,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 111919,
-            "MeleeHourlyXP": 12743
+            "MeleeHourlyXP": 12743,
+            "MeleeHourlyXPNormal": 8495
         },
         {
             "Name": "Marteezy",
@@ -20228,7 +20270,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 70357,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Knerd",
@@ -20370,7 +20413,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 107420,
-            "MeleeHourlyXP": 56752
+            "MeleeHourlyXP": 56752,
+            "MeleeHourlyXPNormal": 37835
         },
         {
             "Name": "H0LYDUCK",
@@ -20442,7 +20486,8 @@
             "MagicOvertakeTimestamp": "2024-02-07T10:33:16.458794+00:00",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 129107,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Frosting",
@@ -20484,7 +20529,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 25704,
-            "MeleeHourlyXP": 25704
+            "MeleeHourlyXP": 25704,
+            "MeleeHourlyXPNormal": 17136
         },
         {
             "Name": "tamori",
@@ -20544,7 +20590,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 113177,
-            "MeleeHourlyXP": 64270
+            "MeleeHourlyXP": 64270,
+            "MeleeHourlyXPNormal": 42847
         },
         {
             "Name": "KelloHitty",
@@ -20633,7 +20680,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 113004,
-            "MeleeHourlyXP": 8805
+            "MeleeHourlyXP": 8805,
+            "MeleeHourlyXPNormal": 5870
         },
         {
             "Name": "Skys",
@@ -20687,7 +20735,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 59723,
-            "MeleeHourlyXP": 28548
+            "MeleeHourlyXP": 28548,
+            "MeleeHourlyXPNormal": 19032
         },
         {
             "Name": "Farcaster",
@@ -20805,7 +20854,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 96643,
-            "MeleeHourlyXP": 48198
+            "MeleeHourlyXP": 48198,
+            "MeleeHourlyXPNormal": 32132
         },
         {
             "Name": "asdqfwbvrwf",
@@ -20865,7 +20915,8 @@
             "MagicOvertakeTimestamp": "2023-10-19T07:47:58.374009+00:00",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 69851,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Kiira",
@@ -21013,7 +21064,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 125300,
-            "MeleeHourlyXP": 56468
+            "MeleeHourlyXP": 56468,
+            "MeleeHourlyXPNormal": 37645
         },
         {
             "Name": "Khazu",
@@ -21078,7 +21130,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 123214,
-            "MeleeHourlyXP": 53448
+            "MeleeHourlyXP": 53448,
+            "MeleeHourlyXPNormal": 35632
         },
         {
             "Name": "caracal",
@@ -21231,7 +21284,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Saurus",
@@ -21279,7 +21333,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 94207,
-            "MeleeHourlyXP": 31456
+            "MeleeHourlyXP": 31456,
+            "MeleeHourlyXPNormal": 20971
         },
         {
             "Name": "Bennyyo",
@@ -21333,7 +21388,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 109353,
-            "MeleeHourlyXP": 57936
+            "MeleeHourlyXP": 57936,
+            "MeleeHourlyXPNormal": 38624
         },
         {
             "Name": "socko",
@@ -21481,7 +21537,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 134548,
-            "MeleeHourlyXP": 66199
+            "MeleeHourlyXP": 66199,
+            "MeleeHourlyXPNormal": 44133
         },
         {
             "Name": "Thessaloniki",
@@ -21588,7 +21645,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 98919,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Stack",
@@ -21689,7 +21747,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "bapt",
@@ -21737,7 +21796,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 108801,
-            "MeleeHourlyXP": 8325
+            "MeleeHourlyXP": 8325,
+            "MeleeHourlyXPNormal": 5550
         },
         {
             "Name": "jagerx",
@@ -21990,7 +22050,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "BlackBacon",
@@ -22138,7 +22199,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 115667,
-            "MeleeHourlyXP": 67366
+            "MeleeHourlyXP": 67366,
+            "MeleeHourlyXPNormal": 44911
         },
         {
             "Name": "bonkers",
@@ -22192,7 +22254,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 123078,
-            "MeleeHourlyXP": 57944
+            "MeleeHourlyXP": 57944,
+            "MeleeHourlyXPNormal": 38629
         },
         {
             "Name": "Butcher",
@@ -22245,7 +22308,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 35460,
-            "MeleeHourlyXP": 13008
+            "MeleeHourlyXP": 13008,
+            "MeleeHourlyXPNormal": 8672
         },
         {
             "Name": "Cheekychops",
@@ -22487,7 +22551,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 120024,
-            "MeleeHourlyXP": 55092
+            "MeleeHourlyXP": 55092,
+            "MeleeHourlyXPNormal": 36728
         },
         {
             "Name": "Champ",
@@ -22546,7 +22611,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 84190,
-            "MeleeHourlyXP": 38508
+            "MeleeHourlyXP": 38508,
+            "MeleeHourlyXPNormal": 25672
         },
         {
             "Name": "Dracken",
@@ -22611,7 +22677,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 124362,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Akiras",
@@ -22764,7 +22831,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 90374,
-            "MeleeHourlyXP": 22975
+            "MeleeHourlyXP": 22975,
+            "MeleeHourlyXPNormal": 15317
         },
         {
             "Name": "kaph",
@@ -22912,7 +22980,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 125030,
-            "MeleeHourlyXP": 61170
+            "MeleeHourlyXP": 61170,
+            "MeleeHourlyXPNormal": 40780
         },
         {
             "Name": "eklypze",
@@ -23001,7 +23070,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 7970,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Vendetta",
@@ -23155,7 +23225,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 71240,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Filiper",
@@ -23203,7 +23274,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 97510,
-            "MeleeHourlyXP": 28940
+            "MeleeHourlyXP": 28940,
+            "MeleeHourlyXPNormal": 19293
         },
         {
             "Name": "Zarka",
@@ -23263,7 +23335,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 85333,
-            "MeleeHourlyXP": 35322
+            "MeleeHourlyXP": 35322,
+            "MeleeHourlyXPNormal": 23548
         },
         {
             "Name": "Extaler",
@@ -23317,7 +23390,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 102850,
-            "MeleeHourlyXP": 51697
+            "MeleeHourlyXP": 51697,
+            "MeleeHourlyXPNormal": 34465
         },
         {
             "Name": "MuppetGoesCrazy",
@@ -23465,7 +23539,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 78323,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Actin",
@@ -23660,7 +23735,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 89428,
-            "MeleeHourlyXP": 28132
+            "MeleeHourlyXP": 28132,
+            "MeleeHourlyXPNormal": 18755
         },
         {
             "Name": "PeterWin",
@@ -23755,7 +23831,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "MMyuki",
@@ -23803,7 +23880,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 91767,
-            "MeleeHourlyXP": 56386
+            "MeleeHourlyXP": 56386,
+            "MeleeHourlyXPNormal": 37591
         },
         {
             "Name": "Altiron",
@@ -23898,7 +23976,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 71803,
-            "MeleeHourlyXP": 37321
+            "MeleeHourlyXP": 37321,
+            "MeleeHourlyXPNormal": 24881
         },
         {
             "Name": "Vlagod",
@@ -23946,7 +24025,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "yoq",
@@ -24076,7 +24156,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 101806,
-            "MeleeHourlyXP": 68408
+            "MeleeHourlyXP": 68408,
+            "MeleeHourlyXPNormal": 45605
         },
         {
             "Name": "1t",
@@ -24241,7 +24322,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 93885,
-            "MeleeHourlyXP": 10044
+            "MeleeHourlyXP": 10044,
+            "MeleeHourlyXPNormal": 6696
         },
         {
             "Name": "LordMoose",
@@ -24551,7 +24633,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "MrXep",
@@ -24697,7 +24780,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 47030,
-            "MeleeHourlyXP": 47030
+            "MeleeHourlyXP": 47030,
+            "MeleeHourlyXPNormal": 31353
         },
         {
             "Name": "Grimlocke",
@@ -24733,7 +24817,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 36159,
-            "MeleeHourlyXP": 20421
+            "MeleeHourlyXP": 20421,
+            "MeleeHourlyXPNormal": 13614
         },
         {
             "Name": "Zynkyoku",
@@ -24774,7 +24859,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 25384,
-            "MeleeHourlyXP": 25384
+            "MeleeHourlyXP": 25384,
+            "MeleeHourlyXPNormal": 16923
         },
         {
             "Name": "SLAYEROFJERRY",
@@ -24810,7 +24896,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "haewon",
@@ -24852,7 +24939,8 @@
             "MagicOvertakeTimestamp": "2023-10-19T05:45:41.635347+00:00",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 45258,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "terms",
@@ -24882,7 +24970,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 728,
-            "MeleeHourlyXP": 728
+            "MeleeHourlyXP": 728,
+            "MeleeHourlyXPNormal": 485
         },
         {
             "Name": "Harris",
@@ -24918,7 +25007,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 24270,
-            "MeleeHourlyXP": 24270
+            "MeleeHourlyXP": 24270,
+            "MeleeHourlyXPNormal": 16180
         },
         {
             "Name": "FewMaxi",
@@ -24954,7 +25044,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 34786,
-            "MeleeHourlyXP": 34786
+            "MeleeHourlyXP": 34786,
+            "MeleeHourlyXPNormal": 23191
         },
         {
             "Name": "DubbZ",
@@ -24990,7 +25081,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 49050,
-            "MeleeHourlyXP": 49050
+            "MeleeHourlyXP": 49050,
+            "MeleeHourlyXPNormal": 32700
         },
         {
             "Name": "TetsuUshi",
@@ -25026,7 +25118,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Holyknowlie",
@@ -25062,7 +25155,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 3402,
-            "MeleeHourlyXP": 3402
+            "MeleeHourlyXP": 3402,
+            "MeleeHourlyXPNormal": 2268
         },
         {
             "Name": "Cerobug",
@@ -25110,7 +25204,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 33269,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "NotQreen",
@@ -25146,7 +25241,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Justin",
@@ -25176,7 +25272,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Betty",
@@ -25206,7 +25303,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Syrick",
@@ -25236,7 +25334,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "nihiliop",
@@ -25266,7 +25365,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 18489,
-            "MeleeHourlyXP": 18489
+            "MeleeHourlyXP": 18489,
+            "MeleeHourlyXPNormal": 12326
         },
         {
             "Name": "azah",
@@ -25302,7 +25402,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "TheRaser",
@@ -25338,7 +25439,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 17558,
-            "MeleeHourlyXP": 17558
+            "MeleeHourlyXP": 17558,
+            "MeleeHourlyXPNormal": 11705
         },
         {
             "Name": "LiuBei",
@@ -25374,7 +25476,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 8850,
-            "MeleeHourlyXP": 8850
+            "MeleeHourlyXP": 8850,
+            "MeleeHourlyXPNormal": 5900
         },
         {
             "Name": "Sneakyturtle",
@@ -25410,7 +25513,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Almera",
@@ -25440,7 +25544,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Sai267",
@@ -25476,7 +25581,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "skunk",
@@ -25512,7 +25618,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 6770,
-            "MeleeHourlyXP": 6770
+            "MeleeHourlyXP": 6770,
+            "MeleeHourlyXPNormal": 4513
         },
         {
             "Name": "DrunkenOirishCat",
@@ -25553,7 +25660,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 15896,
-            "MeleeHourlyXP": 15896
+            "MeleeHourlyXP": 15896,
+            "MeleeHourlyXPNormal": 10597
         },
         {
             "Name": "Zues",
@@ -25589,7 +25697,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "ZZTop1",
@@ -25619,7 +25728,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 3274,
-            "MeleeHourlyXP": 3274
+            "MeleeHourlyXP": 3274,
+            "MeleeHourlyXPNormal": 2183
         },
         {
             "Name": "DemonNg",
@@ -25649,7 +25759,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 1942,
-            "MeleeHourlyXP": 1942
+            "MeleeHourlyXP": 1942,
+            "MeleeHourlyXPNormal": 1295
         },
         {
             "Name": "Tomsn",
@@ -25679,7 +25790,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Kharx",
@@ -25709,7 +25821,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Deverin",
@@ -25739,7 +25852,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "jljlk",
@@ -25769,7 +25883,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 8319,
-            "MeleeHourlyXP": 8319
+            "MeleeHourlyXP": 8319,
+            "MeleeHourlyXPNormal": 5546
         },
         {
             "Name": "FatSweatyJuggs",
@@ -25799,7 +25914,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Plut0",
@@ -25829,7 +25945,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Melissa",
@@ -25859,7 +25976,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 48561,
-            "MeleeHourlyXP": 48561
+            "MeleeHourlyXP": 48561,
+            "MeleeHourlyXPNormal": 32374
         },
         {
             "Name": "TemplarianOG",
@@ -25889,7 +26007,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 15242,
-            "MeleeHourlyXP": 15242
+            "MeleeHourlyXP": 15242,
+            "MeleeHourlyXPNormal": 10161
         },
         {
             "Name": "Jest",
@@ -25919,7 +26038,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "archzzz0z",
@@ -25949,7 +26069,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Cyata",
@@ -25979,7 +26100,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "WeedySpeedy",
@@ -26009,7 +26131,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Cerberus23",
@@ -26039,7 +26162,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 4409,
-            "MeleeHourlyXP": 4409
+            "MeleeHourlyXP": 4409,
+            "MeleeHourlyXPNormal": 2939
         },
         {
             "Name": "gooska",
@@ -26069,7 +26193,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "cabbagemule",
@@ -26099,7 +26224,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "Drunsul",
@@ -26129,7 +26255,8 @@
             "MagicOvertakeTimestamp": "Not catching up",
             "GuildOvertakeTimestamp": "Not catching up",
             "CombatHourlyXP": 0,
-            "MeleeHourlyXP": 0
+            "MeleeHourlyXP": 0,
+            "MeleeHourlyXPNormal": 0
         },
         {
             "Name": "One19",
