@@ -404,7 +404,7 @@ $(document).ready(function() {
                         0,
                         player.Name,
                         player.TaskPointsEndingLevel,
-                        player.TaskPointsEarned
+                        player.TaskPointsEarned ? player.TaskPointsEarned : 0
                     ]);
                 }
             });
