@@ -131,31 +131,23 @@ $(document).ready(function() {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
                 if (player[`${capitalizedTabName}EndingLevel`]) {
-                    const levelUpTime = timeToString(
-                        player[`${capitalizedTabName}LevelUp`],
-                        countdownToLocalTime(player[`${capitalizedTabName}LevelUp`])
-                    );
+                    let levelUpValue = player[`${capitalizedTabName}LevelUp`];
+                    const levelUpTime = levelUpValue !== undefined
+                        ? timeToString(levelUpValue, countdownToLocalTime(levelUpValue))
+                        : "Time unknown, likely new player on LB";
 
                     const overtakeTime = timeToString(
                         player[`${capitalizedTabName}OvertakeTimestamp`],
                         countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
                     );
 
-//                    const hourlyXP = (player[`${capitalizedTabName}HourlyXP`] !== null && typeof player[`${capitalizedTabName}HourlyXP`] !== 'undefined') ?
-//                                     player[`${capitalizedTabName}HourlyXP`] :
-//                                     "Unknown"; //Handle new players on the LB. Still shows undefined for overtake
-//                                     //I probably need to add this to the other initializeDataTable setups
-//                                     //#TODO so I can find this when I need to fix it.
-//                                     //Ternary below is better, above breaks sorting.
-
                     playerDataArray.push([
                         0,
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
                         player[`${capitalizedTabName}EndingXP`],
-//                        hourlyXP,
                         player[`${capitalizedTabName}HourlyXP`] || 0,
-                        levelUpTime,
+                        levelUpTime || 0,
                         overtakeTime
                     ]);
                 }
@@ -251,16 +243,18 @@ $(document).ready(function() {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
                 if (player[`${capitalizedTabName}EndingLevel`]) {
-                    const levelUpTime = timeToString(
-                        player[`${capitalizedTabName}LevelUp`],
-                        countdownToLocalTime(player[`${capitalizedTabName}LevelUp`])
-                    );
+
+                    let levelUpValue = player[`${capitalizedTabName}LevelUp`];
+                    const levelUpTime = levelUpValue !== undefined
+                        ? timeToString(levelUpValue, countdownToLocalTime(levelUpValue))
+                        : "Time unknown, likely new guild on LB";
 
                     const overtakeTime = timeToString(
                         player[`${capitalizedTabName}OvertakeTimestamp`],
                         countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
                     );
 
+                    //Might need the time unknown check here as well
                     const nextGuildSlot = timeToString(
                         player[`NextGuildSlot`],
                         countdownToLocalTime(player[`NextGuildSlot`])
