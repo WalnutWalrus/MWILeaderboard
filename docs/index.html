@@ -48,7 +48,12 @@
         <h1>Very much still in progress</h1>
         <p>Suggestions welcome, as well as any errors you find</p>
 
-        <h4>FYI</h4>
+        <h5>Last Updated</h5>
+        <p style="display: none;">Start: <span id="startTime"></span></p>
+        <span id="endTime"></span>, <span id="timeAgo"></span> ago
+        <p>Average measured over: ~<span id="timeDifference"></span> hours</p>
+
+        <h4><u>FYI</u></h4>
         <ul>
             <li>Times should be in your local time</li>
             <li>When sorting on level, players of the same level should be sorted by actual xp</li>
@@ -57,7 +62,7 @@
             <li>Players new to the LB will show hourly xp as 0</li>
         </ul>
 
-        <h4>Limitations</h4>
+        <h4><u>Limitations</u></h4>
         <ul>
             <li>Level Up/Overtake times are estimates only</li>
             <li>If you aren't on the LB for that skill, you aren't shown</li>
@@ -65,26 +70,22 @@
             <li>Updated manually for now (should be daily)</li>
         </ul>
 
-        <h4>Known Issues</h4>
+        <h4><u>Known Issues</u></h4>
         <ul>
             <li>No special handling for player name-changes. Will show as 0 xp earned instead.</li>
             <li>Column re-ordering breaks Position number. Re-sort on a column to fix until I resolve this</li>
         </ul>
 
-        <h4>#TODO</h4>
+        <h4><u>#TODO</u></h4>
         <ul>
+            <li>Automate data collection</li>
             <li>Add position to xp columns</li>
-            <li>Make collapsed columns/tables a bit more mobile friendly</li>
             <li>Setup deeper skill gathering (Collect all skills if player is on any LB) - N/A Denied by Cheze</li>
             <li>Setup guild tags - Difficult without above</li>
             <li>Add tag to indicate if a player is new to the LB</li>
             <li>Add list of names for people who dropped off the LB?</li>
         </ul>
 
-        <h3>Updated</h3>
-        <p style="display: none;">Start: <span id="startTime"></span></p>
-        <p>Last data taken: <span id="endTime"></span>, <span id="timeAgo"></span> ago</p>
-        <p>Average measured over: ~<span id="timeDifference"></span> hours</p>
     </div>
 </body>
 </html>
