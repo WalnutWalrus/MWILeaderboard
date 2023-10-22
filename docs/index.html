@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/datatables.min.css">
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="css/colReorder.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/fixedHeader.bootstrap5.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/datatables.min.js"></script>
     <script src="js/dataTables.colReorder.min.js"></script>
+    <script src="js/dataTables.fixedHeader.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -65,8 +67,7 @@
 
         <h4>Known Issues</h4>
         <ul>
-            <li>Name changes break things for a day</li>
-            <li>Columns collapse if there are too many, or the screen is too small. I need to change to scrollbar</li>
+            <li>No special handling for player name-changes. Will show as 0 xp earned instead.</li>
             <li>Column re-ordering breaks Position number. Re-sort on a column to fix until I resolve this</li>
         </ul>
 
@@ -76,7 +77,6 @@
             <li>Make collapsed columns/tables a bit more mobile friendly</li>
             <li>Setup deeper skill gathering (Collect all skills if player is on any LB) - N/A Denied by Cheze</li>
             <li>Setup guild tags - Difficult without above</li>
-            <li>Fix new players (Unknown Hourly XP) showing undefined overtake</li>
         </ul>
 
         <h3>Updated</h3>

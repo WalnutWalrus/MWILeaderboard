@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 
     $('nav button').click(function() {
+        destroyExistingDataTables(); //Had to move destroy here to get fixedHeader working correctly
         const tabName = $(this).data('tab');
         loadTabContent(tabName, function() {
             const tabInitializers = {
@@ -41,6 +42,23 @@ $(document).ready(function() {
         $(this).addClass("active-tab");
 
     });
+
+    function destroyExistingDataTables() {
+        const potentialTables = [
+            'milking', 'woodcutting', 'foraging', 'cheesesmithing',
+            'crafting', 'tailoring', 'cooking', 'brewing', 'enhancing',
+            'stamina', 'intelligence', 'attack', 'power', 'defense',
+            'ranged', 'magic', 'guild', 'combat', 'taskPoints',
+            'totalLevel', 'totalHourly', 'activity'
+        ];
+
+        potentialTables.forEach(tabName => {
+            if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
+                $(`#${tabName}Table`).DataTable().destroy();
+            }
+        });
+    }
+
 
     function timeToString(utcString, prefix = "") {
         const formattedTime = toLocalFormattedTime(utcString);
@@ -123,10 +141,6 @@ $(document).ready(function() {
     function initializeDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
 
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
-
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
@@ -178,7 +192,8 @@ $(document).ready(function() {
                     { targets: 3, visible: false },
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -235,10 +250,6 @@ $(document).ready(function() {
 
     function initializeGuildDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-//       TODO move the following to all areas as new tabs added? seems dumb.
-        if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
             $.each(data.playerData, function(index, player) {
@@ -299,7 +310,8 @@ $(document).ready(function() {
                     { targets: 3, visible: false },
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -315,10 +327,6 @@ $(document).ready(function() {
 
     function initializeCombatDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
 
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
@@ -370,7 +378,8 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -386,10 +395,6 @@ $(document).ready(function() {
 
     function initializeTaskPointsDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
 
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
@@ -426,7 +431,8 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -442,10 +448,6 @@ $(document).ready(function() {
 
     function initializeTotalLevelDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
 
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
@@ -483,7 +485,8 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -509,10 +512,6 @@ $(document).ready(function() {
 
     function initializeTotalHourlyDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-
-         if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
 
         $.getJSON('output.json', function(data) {
             var playerDataArray = [];
@@ -577,7 +576,8 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: false,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],
@@ -593,9 +593,7 @@ $(document).ready(function() {
 
     function initializeActivityDataTable(tabName) {
         const capitalizedTabName = capitalizeFirstLetter(tabName);
-        if ($.fn.DataTable.isDataTable(`#${tabName}Table`)) {
-            $(`#${tabName}Table`).DataTable().destroy();
-        }
+
         $.getJSON('output.json', function(data) {
             var skillDataArray = [];
             $.each(data.skillData, function(skill, count) {
@@ -626,7 +624,8 @@ $(document).ready(function() {
                 columnDefs: [
                     { targets: "_all", orderSequence: ["desc", "asc"], render: renderNumberWithCommas }
                 ],
-                responsive: true,
+                responsive: false,//True seems less than ideal for mobile
+                fixedHeader: true,
                 "pageLength": 100,
                 dom: 'Bfrtip',
                 buttons: ['copy', 'excel', 'pdf'],

@@ -15,4 +15,8 @@ nav .btn.active-tab {
     background-color: #00222D;
 }
 
-
+/* Couldn't figure out why fixedHeader styling wasn't working (probably something dumb), so sticking with this for now*/
+.fixedHeader-floating thead th {
+    background-color: #222222;
+    color: #fff;
+}
