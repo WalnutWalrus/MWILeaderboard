@@ -141,18 +141,20 @@ $(document).ready(function() {
                         countdownToLocalTime(player[`${capitalizedTabName}OvertakeTimestamp`])
                     );
 
-                    const hourlyXP = (player[`${capitalizedTabName}HourlyXP`] !== null && typeof player[`${capitalizedTabName}HourlyXP`] !== 'undefined') ?
-                                     player[`${capitalizedTabName}HourlyXP`] :
-                                     "Unknown"; //Handle new players on the LB. Still shows undefined for overtake
-                                     //I probably need to add this to the other initializeDataTable setups
-                                     //#TODO so I can find this when I need to fix it.
+//                    const hourlyXP = (player[`${capitalizedTabName}HourlyXP`] !== null && typeof player[`${capitalizedTabName}HourlyXP`] !== 'undefined') ?
+//                                     player[`${capitalizedTabName}HourlyXP`] :
+//                                     "Unknown"; //Handle new players on the LB. Still shows undefined for overtake
+//                                     //I probably need to add this to the other initializeDataTable setups
+//                                     //#TODO so I can find this when I need to fix it.
+//                                     //Ternary below is better, above breaks sorting.
 
                     playerDataArray.push([
                         0,
                         player.Name,
                         player[`${capitalizedTabName}EndingLevel`],
                         player[`${capitalizedTabName}EndingXP`],
-                        hourlyXP,
+//                        hourlyXP,
+                        player[`${capitalizedTabName}HourlyXP`] || 0,
                         levelUpTime,
                         overtakeTime
                     ]);
@@ -267,9 +269,9 @@ $(document).ready(function() {
                     playerDataArray.push([
                         0,
                         player.Name,
-                        player[`${capitalizedTabName}EndingLevel`],
-                        player[`${capitalizedTabName}EndingXP`],
-                        player[`${capitalizedTabName}HourlyXP`],
+                        player[`${capitalizedTabName}EndingLevel`] || 0,
+                        player[`${capitalizedTabName}EndingXP`] || 0,
+                        player[`${capitalizedTabName}HourlyXP`] || 0,
                         levelUpTime,
                         nextGuildSlot,
                         overtakeTime
@@ -332,7 +334,7 @@ $(document).ready(function() {
                     playerDataArray.push([
                         0,
                         player.Name,
-                        player[`${capitalizedTabName}HourlyXP`],
+                        player[`${capitalizedTabName}HourlyXP`] || 0,
                         player[`StaminaHourlyXP`] || 0,
                         player[`DefenseHourlyXP`] || 0,
                         player[`IntelligenceHourlyXP`] || 0,
@@ -403,8 +405,8 @@ $(document).ready(function() {
                     playerDataArray.push([
                         0,
                         player.Name,
-                        player.TaskPointsEndingLevel,
-                        player.TaskPointsEarned ? player.TaskPointsEarned : 0
+                        player.TaskPointsEndingLevel || 0,
+                        player.TaskPointsEarned || 0
                     ]);
                 }
             });
@@ -459,9 +461,9 @@ $(document).ready(function() {
                     playerDataArray.push([
                         0,
                         player.Name,
-                        player.TotalLevelEndingLevel,
-                        player.TotalLevelEndingXP,
-                        player.TotalLevelHourlyXP
+                        player.TotalLevelEndingLevel || 0,
+                        player.TotalLevelEndingXP || 0,
+                        player.TotalLevelHourlyXP || 0
                     ]);
                 }
             });
@@ -525,23 +527,23 @@ $(document).ready(function() {
                     playerDataArray.push([
                         0,
                         player.Name,
-                        player.TotalHourlyXP ?? 0,
-                        player.StaminaHourlyXP ?? 0,
-                        player.IntelligenceHourlyXP ?? 0,
-                        player.AttackHourlyXP ?? 0,
-                        player.PowerHourlyXP ?? 0,
-                        player.DefenseHourlyXP ?? 0,
-                        player.RangedHourlyXP ?? 0,
-                        player.MagicHourlyXP ?? 0,
-                        player.CheesesmithingHourlyXP ?? 0,
-                        player.CraftingHourlyXP ?? 0,
-                        player.TailoringHourlyXP ?? 0,
-                        player.CookingHourlyXP ?? 0,
-                        player.BrewingHourlyXP ?? 0,
-                        player.EnhancingHourlyXP ?? 0,
-                        player.MilkingHourlyXP ?? 0,
-                        player.ForagingHourlyXP ?? 0,
-                        player.WoodcuttingHourlyXP ?? 0
+                        player.TotalHourlyXP || 0,
+                        player.StaminaHourlyXP || 0,
+                        player.IntelligenceHourlyXP || 0,
+                        player.AttackHourlyXP || 0,
+                        player.PowerHourlyXP || 0,
+                        player.DefenseHourlyXP || 0,
+                        player.RangedHourlyXP || 0,
+                        player.MagicHourlyXP || 0,
+                        player.CheesesmithingHourlyXP || 0,
+                        player.CraftingHourlyXP || 0,
+                        player.TailoringHourlyXP || 0,
+                        player.CookingHourlyXP || 0,
+                        player.BrewingHourlyXP || 0,
+                        player.EnhancingHourlyXP || 0,
+                        player.MilkingHourlyXP || 0,
+                        player.ForagingHourlyXP || 0,
+                        player.WoodcuttingHourlyXP || 0
                     ]);
                 }
             });
