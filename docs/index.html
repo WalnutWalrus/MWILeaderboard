@@ -57,7 +57,7 @@
         <ul>
             <li>Times should be in your local time</li>
             <li>When sorting on level, players of the same level should be sorted by actual xp</li>
-            <li>Catchup logic only looks at the player directly ahead on the LB</li>
+            <li>Catchup logic is very simple, use it as an estimate only (Same for level up time)</li>
             <li>Total Hourly is based on the higher of known LB skills, or Total Level xp gained</li>
             <li>Players new to the LB will show hourly xp as 0</li>
         </ul>
@@ -65,9 +65,9 @@
         <h4><u>Limitations</u></h4>
         <ul>
             <li>Level Up/Overtake times are estimates only</li>
-            <li>If you aren't on the LB for that skill, you aren't shown</li>
+            <li>Only tracks players on the leaderboards</li>
             <li>Hourly xp only shown if you were on the LB for both start and stop data points</li>
-            <li>Updated manually for now (should be daily)</li>
+            <li>Updated manually for now (I try to do it daily)</li>
         </ul>
 
         <h4><u>Known Issues</u></h4>
@@ -78,13 +78,13 @@
 
         <h4><u>#TODO</u></h4>
         <ul>
-            <li>Automate data collection</li>
-            <li>Add some sort of range filter (1/6/12/24 hours or something)</li>
+            <li>Automate data collection - Will need to rewrite how things get processed so I'm avoiding this for now</li>
+            <li>Add some sort of range filter - View average over 6/12/24 hours or such. Requires above first.</li>
             <li>Add position to xp columns (easier comparison between LB positions)</li>
-            <li>Setup deeper skill gathering (Collect all skills if player is on any LB) - N/A Denied by Cheze</li>
-            <li>Setup guild tags - Difficult without above</li>
-            <li>Add tag to indicate if a player is new to the LB</li>
+            <li>Setup guild tags? - Difficult without deeper data fetching</li>
+            <li>Add tag to indicate if a player is new to the LB?</li>
             <li>Add list of names for people who dropped off the LB?</li>
+            <li>Probably simplify to one page, current setup seems overly complicated</li>
         </ul>
 
     </div>
